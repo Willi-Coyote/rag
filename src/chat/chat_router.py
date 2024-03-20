@@ -11,6 +11,7 @@ chat_router = APIRouter()
 def create_chat():
     return Chat(chat_id=uuid4())
 
+
 @chat_router.post("/v1/chat/{id}")
-def get_chat(id: UUID):
+def get_chat(id: UUID, question: str, ):
     pass
