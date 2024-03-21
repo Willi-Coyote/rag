@@ -1,13 +1,8 @@
-import os
-
 import uvicorn
-
 from fastapi import FastAPI
 from opentelemetry.instrumentation.fastapi import FastAPIInstrumentor
 
 from chat.chat_router import chat_router
-
-
 
 
 def init_application():

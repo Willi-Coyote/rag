@@ -7,7 +7,7 @@ from metrics.open_telemetry import OpenTelemetry
 class AzureOpenTelemetry(OpenTelemetry):
 
     def __init__(self, configuration: Configuration):
-        self._connection_String = configuration.azure_app_insights_connection_string
+        self._connection_string = configuration.azure_app_insights_connection_string
 
     def configure(self):
-        configure_azure_monitor(connection_string=self._connection_String)
+        configure_azure_monitor(connection_string=self._connection_string)

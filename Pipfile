@@ -8,8 +8,11 @@ fastapi = "*"
 uvicorn = "*"
 azure-monitor-opentelemetry = "*"
 python-dotenv = "*"
+pylint = "*"
+jwt = "*"
 
 [dev-packages]
+pytest = "*"
 
 [requires]
 python_version = "3.11"
