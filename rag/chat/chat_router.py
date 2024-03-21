@@ -12,6 +12,6 @@ def create_chat():
     return Chat(chat_id=uuid4())
 
 
-@chat_router.post("/v1/chat/{id}")
-def get_chat(id: UUID, question: str, ):
+@chat_router.post("/v1/chat/{id}", response_model=Chat)
+def get_chat(id: UUID, question: str):
     pass
