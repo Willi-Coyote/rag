@@ -9,5 +9,5 @@ class AzureOpenTelemetry(OpenTelemetry):
     def __init__(self, configuration: Configuration):
         self._connection_String = configuration.azure_app_insights_connection_string
 
-    def configure_azure_monitor(self):
+    def configure(self):
         configure_azure_monitor(connection_string=self._connection_String)

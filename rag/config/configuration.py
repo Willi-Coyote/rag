@@ -1,10 +1,16 @@
 from abc import ABC
 from dataclasses import dataclass
+from enum import Enum
 
 
-@dataclass
+class Environment(Enum):
+    AZURE = "azure"
+    AWS = "aws"
+
+
 class Configuration(ABC):
     azure_app_insights_connection_string: str
+    environment: Environment
     token_validation: bool
 
 
